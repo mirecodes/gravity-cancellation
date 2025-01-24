@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="indy-gello">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.10086828858753E-12 7.97037590396384E-05 0.0099743481813495"
+        rpy="0 0 0" />
+      <mass
+        value="0.297595645464966" />
+      <inertia
+        ixx="0.00082887007900153"
+        ixy="5.2438960046514E-15"
+        ixz="-9.32210061505888E-17"
+        iyy="0.0008144859417279"
+        iyz="-1.0606377858122E-07"
+        izz="0.0016232172042748" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/base_link_collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="2.60008567524947E-10 0.00979751230032889 0.0473885909265531"
+        rpy="0 0 0" />
+      <mass
+        value="0.111883325699471" />
+      <inertia
+        ixx="5.5182497311543E-05"
+        ixy="-9.73576809393125E-13"
+        ixz="4.995935281703E-13"
+        iyy="4.84868218434387E-05"
+        iyz="-9.07110429462197E-06"
+        izz="3.04422678711253E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link1_collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0.012 0.06"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="3.4"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="1.58376693696175E-11 0.0215814921854116 0.0787500001847784"
+        rpy="0 0 0" />
+      <mass
+        value="0.292024549976832" />
+      <inertia
+        ixx="0.000495645594571539"
+        ixy="5.09858077861509E-14"
+        ixz="1.60429491180874E-13"
+        iyy="0.000496102658269112"
+        iyz="1.34020391243524E-12"
+        izz="7.40144785445118E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link2_collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 0.047725 0.067"
+      rpy="0 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="3.4"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-1.70186139949972E-06 -0.0329169854078744 0.000623757148172532"
+        rpy="0 0 0" />
+      <mass
+        value="0.0421144778156789" />
+      <inertia
+        ixx="1.35026863907814E-05"
+        ixy="1.37836156819399E-09"
+        ixz="8.39620381642286E-11"
+        iyy="6.12325805734184E-06"
+        iyz="-2.59912127947901E-07"
+        izz="1.4682526108416E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link3_collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1575"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="3.4"
+      velocity="0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-6.27740965202159E-07 0.000263072686223432 0.0574285722868058"
+        rpy="0 0 0" />
+      <mass
+        value="0.114186790835051" />
+      <inertia
+        ixx="8.41878192434863E-05"
+        ixy="3.76483425847066E-11"
+        ixz="-1.37847672523575E-09"
+        iyy="8.52419015947094E-05"
+        iyz="8.35143837050407E-07"
+        izz="1.99180736276528E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link4_collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 -0.0485 0.0175"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="0.52"
+      velocity="0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="1.55514935364051E-06 0.0319777693838279 0.000664996325046963"
+        rpy="0 0 0" />
+      <mass
+        value="0.0460807384452524" />
+      <inertia
+        ixx="1.56785561839794E-05"
+        ixy="1.37858111646645E-09"
+        ixz="-8.40191538921201E-11"
+        iyy="6.60850205135359E-06"
+        iyz="2.40503791140801E-07"
+        izz="1.67466112051709E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link5_collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 0.0175 0.105"
+      rpy="0 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="0.52"
+      velocity="0" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="-3.17648968510078E-10 -2.96680527367421E-10 0.0266996485802297"
+        rpy="0 0 0" />
+      <mass
+        value="0.0544490389913867" />
+      <inertia
+        ixx="1.27487584701772E-05"
+        ixy="1.87775059464296E-20"
+        ixz="1.02398911629396E-13"
+        iyy="1.27487584701772E-05"
+        iyz="1.08518811341541E-13"
+        izz="1.15262690805742E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://indy-gello/meshes/link6_collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 0.04655 0.0175"
+      rpy="0 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="0.52"
+      velocity="0" />
+  </joint>
+</robot>
